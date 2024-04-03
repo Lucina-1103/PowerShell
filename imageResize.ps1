@@ -1,6 +1,6 @@
-# •ÏŠ·Œ³ƒtƒHƒ‹ƒ_
-$folder1 = "C:\Users\Desktop\‰æ‘œ\"
-$folder2 = "C:\Users\Desktop\ƒŠƒTƒCƒY\"
+ï»¿# å¤‰æ›å…ƒãƒ•ã‚©ãƒ«ãƒ€
+$folder1 = "C:\Users\Desktop\ç”»åƒ\"
+$folder2 = "C:\Users\Desktop\ãƒªã‚µã‚¤ã‚º\"
 $sizeT = 50
 $sizeY = 50
 
@@ -9,7 +9,7 @@ $sizeY = 50
 $itemList = Get-ChildItem $folder1;
 foreach($item in $itemList) {
     if($item.PSIContainer) {
-        # ƒtƒHƒ‹ƒ_–¼‚ğæ“¾‚µ‚½ê‡‚ÍƒXƒLƒbƒv
+        # ãƒ•ã‚©ãƒ«ãƒ€åã‚’å–å¾—ã—ãŸå ´åˆã¯ã‚¹ã‚­ãƒƒãƒ—
     } else {
         $image = New-Object System.Drawing.Bitmap($folder1 + $item.name)
 
