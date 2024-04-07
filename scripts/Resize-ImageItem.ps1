@@ -1,6 +1,6 @@
 ﻿# 変換元フォルダ
-$folder1 = "C:\Users\lucin\Desktop\画像\"
-$folder2 = "C:\Users\lucin\Desktop\リサイズ\"
+$folder1 = "C:\Users\xxxxx\Desktop\画像\"
+$folder2 = "C:\Users\xxxxx\Desktop\リサイズ\"
 $sizeT = 50
 $sizeY = 50
 
