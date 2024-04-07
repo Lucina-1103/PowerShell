@@ -1,10 +1,10 @@
 ﻿# 変換元フォルダ
-$folder1 = "C:\Users\Desktop\画像\"
-$folder2 = "C:\Users\Desktop\リサイズ\"
+$folder1 = "C:\Users\lucin\Desktop\画像\"
+$folder2 = "C:\Users\lucin\Desktop\リサイズ\"
 $sizeT = 50
 $sizeY = 50
 
-[void][Reflecttion.Assembly]::LoadWithPartialName("System.Drawing")
+[void][Reflection.Assembly]::LoadWithPartialName("System.Drawing")
 
 $itemList = Get-ChildItem $folder1;
 foreach($item in $itemList) {
@@ -18,7 +18,7 @@ foreach($item in $itemList) {
         $graphics = [System.Drawing.Graphics]::FromImage($canvas)
         $graphics.DrawImage($image, (New-Object System.Drawing.Rectangle(0, 0, $canvas.Width, $canvas.Height)))
 
-        $canvas.Save($folder2 + $item.name, [System.Drawing.Imageing.ImageFormat]::Jpeg)
+        $canvas.Save($folder2 + $item.name, [System.Drawing.Imaging.ImageFormat]::Jpeg)
 
         $graphics.Dispose()
         $canvas.Dispose()
