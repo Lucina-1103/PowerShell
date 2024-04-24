@@ -1,10 +1,10 @@
-﻿# 変換元フォルダ
+﻿Add-Type -AssemblyName System.Drawing
+
+# 変換元フォルダ
 $folder1 = "C:\Users\xxxxx\Desktop\画像\"
 $folder2 = "C:\Users\xxxxx\Desktop\リサイズ\"
 $sizeT = 50
 $sizeY = 50
-
-[void][Reflection.Assembly]::LoadWithPartialName("System.Drawing")
 
 $itemList = Get-ChildItem $folder1;
 foreach($item in $itemList) {
